@@ -7,7 +7,7 @@
   <!-- font awesome file link  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <script src="sweetalert2/dist/sweetalert2.min.js"></script>
-  
+  <script src="jquery-2.1.4.js"></script>
   <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
 
   <link
@@ -569,7 +569,14 @@
 
 
 
-
+<div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        setTimeout(function(){
+          $(".loader-wrapper").fadeToggle();
+        }, 1500);
+    </script>
 
 
 
